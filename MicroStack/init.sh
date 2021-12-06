@@ -62,7 +62,7 @@ sudo apt install mysql-client-core-8.0
 sudo snap install microstack --devmode --beta
 
 # Inicialiacion.
-sudo microstack init --auto --control
+sudo microstack init --auto --control --setup-loop-based-cinder-lvm-backend --loop-device-file-size 50
 
 # Ejecucion cada que se inicia la maquina virtual.
 sudo snap enable microstack
